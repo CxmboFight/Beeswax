@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game Modes - MythicMC</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    .game-modes-list {
+      margin-top: 2.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.8rem;
+    }
+    .game-mode-card {
+      background: rgba(255, 215, 0, 0.08);
+      padding: 2rem 1.8rem;
+      border-radius: 16px;
+      box-shadow: 0 0 24px rgba(255, 215, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+      user-select: none;
+      text-align: center;
+    }
+    .game-mode-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 36px rgba(255, 215, 0, 0.6);
+    }
+    .game-mode-card h2 {
+      color: #FFD700;
+      font-weight: 700;
+      font-size: 1.7rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.06em;
+    }
+    .game-mode-card p {
+      color: #f0e6d2;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+    main p.lead {
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #e9d999;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+    main p.final-note {
+      margin-top: 3.5rem;
+      font-weight: 600;
+      font-style: italic;
+      color: #e9d999;
+      text-align: center;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">MythicMC</a>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gamemodes.html" aria-current="page">Game Modes</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 80px; max-width: 960px;">
+
+    <h1>Game Modes on MythicMC</h1>
+    <p class="lead">Simplicity meets excitement. Dive into our curated Minecraft experiences: classic Survival, thrilling Duels, the unique challenge of OneBlock, and fast-paced KitPvP — all hacker-free and community-focused.</p>
+
+    <section class="game-modes-list" aria-label="List of MythicMC Game Modes">
+
+      <article class="game-mode-card" role="region" aria-labelledby="survival-title" tabindex="0">
+        <h2 id="survival-title">Survival</h2>
+        <p>Build, explore, and thrive in classic Survival mode. Experience Minecraft the way it was meant to be played — fair, fun, and full of adventure.</p>
+      </article>
+
+      <article class="game-mode-card" role="region" aria-labelledby="duels-title" tabindex="0">
+        <h2 id="duels-title">Duels</h2>
+        <p>Show off your PvP prowess in fast-paced one-on-one battles. Clean gameplay, no hackers, just pure skill and competition.</p>
+      </article>
+
+      <article class="game-mode-card" role="region" aria-labelledby="oneblock-title" tabindex="0">
+        <h2 id="oneblock-title">OneBlock</h2>
+        <p>Start small on a single block and expand your world with resourceful mining and crafting. A fresh spin on skyblock challenges with MythicMC’s quality.</p>
+      </article>
+
+      <article class="game-mode-card" role="region" aria-labelledby="kitpvp-title" tabindex="0">
+        <h2 id="kitpvp-title">KitPvP</h2>
+        <p>Choose your kit and jump straight into fast, action-packed PvP battles. Perfect your skills and dominate the arena in a fair environment.</p>
+      </article>
+
+    </section>
+
+    <p class="final-note">
+      Join MythicMC today and experience Minecraft built on fairness, skill, and community spirit.
+    </p>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2025 MythicMC. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://discord.gg/rKKNJZ6Sb6" target="_blank" rel="noopener">Discord</a>
+        <a href="https://www.youtube.com/channel/YOUR_CHANNEL_ID" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
