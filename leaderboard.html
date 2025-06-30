@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leaderboard - MythicMC</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    main.container {
+      max-width: 960px;
+      padding-top: 80px;
+      margin: 0 auto;
+      color: #f0e6d2;
+      text-align: center;
+    }
+    h1 {
+      color: #FFD700;
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.06em;
+    }
+    p.lead {
+      max-width: 700px;
+      margin: 0 auto 3rem auto;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #e9d999;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: rgba(255, 215, 0, 0.07);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 24px rgba(255, 215, 0, 0.3);
+    }
+    th, td {
+      padding: 1rem 1.5rem;
+      text-align: left;
+      font-weight: 500;
+      color: #f0e6d2;
+      border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+    }
+    th {
+      background-color: #ffd700cc;
+      color: #000;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+    tr:hover {
+      background-color: rgba(255, 215, 0, 0.15);
+    }
+
+    section.support {
+      margin-top: 4rem;
+      padding: 2.5rem 2rem;
+      background: rgba(255, 215, 0, 0.12);
+      border-radius: 16px;
+      box-shadow: 0 0 32px rgba(255, 215, 0, 0.4);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    section.support h2 {
+      color: #FFD700;
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    section.support p {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #f0e6d2;
+      margin-bottom: 1.5rem;
+    }
+    section.support a.btn-primary {
+      background-color: #FFD700;
+      color: #000;
+      font-weight: 700;
+      padding: 0.9rem 2.4rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.15rem;
+      letter-spacing: 0.05em;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+    section.support a.btn-primary:hover {
+      background-color: #e6c200;
+    }
+
+    @media (max-width: 600px) {
+      th, td {
+        padding: 0.8rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">MythicMC</a>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gamemodes.html">Game Modes</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="leaderboard.html" aria-current="page">Leaderboard</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container" role="main" aria-label="Leaderboard and Support Section">
+
+    <h1>MythicMC Leaderboard</h1>
+    <p class="lead">The top players of MythicMC will be showcased here once the server is live. Get ready to compete and climb the ranks!</p>
+
+    <table aria-label="MythicMC top players leaderboard" role="table">
+      <thead>
+        <tr>
+          <th scope="col">Rank</th>
+          <th scope="col">Player</th>
+          <th scope="col">Points</th>
+          <th scope="col">Game Mode</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Loading...</td><td>—</td><td>—</td></tr>
+        <tr><td>2</td><td>Loading...</td><td>—</td><td>—</td></tr>
+        <tr><td>3</td><td>Loading...</td><td>—</td><td>—</td></tr>
+        <tr><td>4</td><td>Loading...</td><td>—</td><td>—</td></tr>
+        <tr><td>5</td><td>Loading...</td><td>—</td><td>—</td></tr>
+      </tbody>
+    </table>
+
+    <section class="support" aria-labelledby="support-title">
+      <h2 id="support-title">Support MythicMC Launch</h2>
+      <p>We’re currently preparing MythicMC for launch but need your support to make it happen faster and better. Buy a Founder Rank or donate to help us build a hacker-free Minecraft community.</p>
+      <a href="https://yourpaymentlink.com" target="_blank" rel="noopener" class="btn-primary" aria-label="Buy Founder Rank to support MythicMC">Buy Founder Rank</a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2025 MythicMC. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://discord.gg/rKKNJZ6Sb6" target="_blank" rel="noopener">Discord</a>
+        <a href="https://www.youtube.com/channel/YOUR_CHANNEL_ID" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
